@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Account - Gym Fitzone</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 80px;
+            background: white;
+            padding: 30px;
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Delete Your Account</h2>
+    <p>Enter your details to request account deletion</p>
+
+    <input type="text" placeholder="Member ID"><br>
+    <input type="email" placeholder="Email"><br>
+
+    <button onclick="deleteAccount()">Delete Account</button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+function deleteAccount() {
+    document.getElementById("message").innerHTML =
+        "Your request has been submitted. We will process it within 24 hours.";
+}
+</script>
+
+</body>
+</html>
